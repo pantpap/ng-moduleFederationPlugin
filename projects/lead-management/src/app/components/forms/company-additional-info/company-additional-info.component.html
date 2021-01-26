@@ -1,0 +1,40 @@
+<form [formGroup]="additionalInfoForm">
+  <div class="form-group row justify-space-between">
+    <label for="turnover" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Κύκλος Εργασιών:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="turnover" formContolName="turnover"  />
+  </div>
+  <div class="form-group row justify-content-between">
+    <label for="totalFunding" class="col-sm-6 col-form-label">
+      Σύνολο Χρηματοδοτήσεων:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="totalFunding" formContolName="totalFunding"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="ETEFunding" class="col-sm-6 col-form-label">% Χρηματοδότησης απο ΕΤΕ: </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="ETEFunding" formContolName="ETEFunding" />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="totalEE" class="col-sm-6 col-form-label">Σύνολο Ε/Ε ή Ε/Π: </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="totalEE" formContolName="totalEE"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="importExportValues" class="col-sm-6 col-form-label">
+     Σύνολο Αξιών Εισαγωγών / Εξαγωγών::
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="importExportValues" formContolName="importExportValues"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="totalPayments" class="col-sm-6 col-form-label">
+      Σύνολο Πληρωμών / Εμβασμάτων /Εισπράξεων:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="totalPayments" formContolName="totalPayments"  />
+  </div>
+  </form>

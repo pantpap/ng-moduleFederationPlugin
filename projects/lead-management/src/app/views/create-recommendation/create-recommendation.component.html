@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-12 mb-3">
+    <app-expand-handler title="Στοιχεία Καταχωρητή" [expanded]="true" [withCard]="true" testTag="Test Tag">
+      <app-register-user-data></app-register-user-data>
+    </app-expand-handler>
+  </div>
+
+  <div class="col-6 mb-3">
+    <app-expand-handler title="Στοιχεία Πελάτη" [expanded]="true" [withCard]="true" classes="mb-3" testTag="Test Tag">
+      <app-applicant-user-data></app-applicant-user-data>
+    </app-expand-handler>
+
+    <app-expand-handler title="Προιόντα - Υπηρεσίες Ενδιαφέροντος" [expanded]="true" [withCard]="true" testTag="Test Tag">
+      <app-products-of-interest></app-products-of-interest>
+    </app-expand-handler>
+  </div>
+
+  <div class="col-6 mb-3">
+    <app-expand-handler title="Στοιχεία Αρμόδιου Επιχείρησης" [expanded]="true" [withCard]="true" classes="mb-3" testTag="Test Tag">
+      <app-contract-officer-data></app-contract-officer-data>
+    </app-expand-handler>
+
+    <app-expand-handler title="Πρόσθετα Στοιχεία Επιχείρησης" [expanded]="true" [withCard]="true" classes="mb-3" testTag="Test Tag">
+      <app-company-additional-info></app-company-additional-info>
+    </app-expand-handler>
+
+    <app-expand-handler title="Επισυναπτόμενα Έγγραφα" [expanded]="true" [withCard]="true" testTag="Test Tag">
+      <app-attached-documents></app-attached-documents>
+    </app-expand-handler>
+  </div>
+
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body d-flex justify-content-end">
+        <button class="btn btn-secondary btn-lg rounded-sm">Αποθήκευση</button>
+        <button class="btn btn-dark btn-lg rounded-sm mx-2">Υποβολή</button>
+        <button class="btn btn-danger btn-lg rounded-sm">Ακύρωση</button>
+      </div>
+    </div>
+  </div>
+</div>

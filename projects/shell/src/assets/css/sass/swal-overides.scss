@@ -1,0 +1,25 @@
+@import 'vars';
+.swal2-error-content {
+  color: $error-color !important;
+}
+
+.swal2-error-title {
+  color: $error-color !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: $main-myNBG-color !important;
+}
+
+.swal2-success-content {
+  color: $main-myNBG-color !important;
+  .swal2-html-container{
+    float: left;
+  }
+
+}
+
+.swal2-success-title {
+  color: $main-myNBG-color !important;
+  width: 100%
+}

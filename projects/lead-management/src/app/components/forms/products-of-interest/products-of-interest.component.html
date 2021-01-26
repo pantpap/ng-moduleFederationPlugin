@@ -1,0 +1,24 @@
+<form>
+  <ng-container *ngFor="let product of products">
+    <ng-container *ngIf="product.items.length; else justOne">
+      <p class="mt-2 font-weight-bold">{{ product.name }}</p>
+      <ng-container *ngFor="let item of product.items">
+        <div class="ml-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" [id]="item.name" [(ngModel)]="item.selected" [name]="item.name" />
+            <label class="form-check-label" [for]="item.name">{{ item.name }} </label>
+          </div>
+          <textarea *ngIf="item.selected" class="form-control ml-3 mt-2" rows="2" placeholder="Γράψτε τα σχόλια σας" [(ngModel)]="item.notes" name="textarea-{{ item.name }}"></textarea>
+        </div>
+      </ng-container>
+    </ng-container>
+
+    <ng-template #justOne>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" [id]="product.name" [(ngModel)]="product.selected" [name]="product.name" />
+        <label class="form-check-label" [for]="product.name">{{ product.name }} </label>
+      </div>
+      <textarea *ngIf="product.selected" class="form-control ml-3 mt-2" rows="2" placeholder="Γράψτε τα σχόλια σας" [(ngModel)]="product.notes" name="textarea-{{ product.name }}"></textarea>
+    </ng-template>
+  </ng-container>
+</form>

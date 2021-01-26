@@ -1,0 +1,75 @@
+
+<form [formGroup]="applicantDataForm">
+  <div class="form-group row justify-space-between">
+    <label for="customerCode" class="col-sm-6 col-form-label">ΣΥΔΙΠΕΛ:</label>
+    <input type="text" class="form-control rounded-sm col-sm-6" id="customerCode" formContolName="customerCode"  />
+  </div>
+  <div class="form-group row justify-content-between">
+    <label for="companyName" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Ονοματεπώνυμο - Επωνυμία:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="companyName" formContolName="companyName"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="legalForm" class="col-sm-6 col-form-label">Νομική Μορφή: </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="legalForm" formContolName="legalForm" />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="afm" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>ΑΦΜ:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="afm" formContolName="afm"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="workspace" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Αντικείμενο:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="workspace" formContolName="workspace"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="representative" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Νόμιμος εκπρόσωπος:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="representative" formContolName="representative"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="teamCode" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>ΣΥΔΙΠΕΛ Ομάδας:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="teamCode" formContolName="teamCode"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="groupCode" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>ΣΥΔΙΠΕΛ Ομίλου:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="groupCode" formContolName="groupCode"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="groupName" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Επωνυμία Ομάδας / Ομίλου :
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="groupName" formContolName="groupName"  />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="customerType" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Τύπος πελάτη:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="customerType" formContolName="customerType" />
+  </div>
+  <div class="form-group row justify-space-between">
+    <label for="relationManager" class="col-sm-6 col-form-label">
+      <span style="color: red">* </span>Υπεύθυνος Σχέσης (Corporate RM) πελάτη:
+    </label>
+    <input type="text" class="form-control rounded-sm col-sm-6"
+           id="relationManager" formContolName="relationManager" />
+  </div>
+</form>

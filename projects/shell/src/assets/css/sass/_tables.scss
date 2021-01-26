@@ -1,0 +1,23 @@
+@import 'src/assets/css/sass/_vars';
+
+table#deposit__search--table {
+  margin-top: 30px;
+  thead {
+    background-color: $table-header-bg;
+    color: $table-header-color;
+  }
+  th {
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  td {
+    padding: 5px;
+  }
+
+  .hyperlink {
+    cursor: pointer;
+    width: 120px;
+    color: blue;
+    text-decoration: underline;
+  }
+}

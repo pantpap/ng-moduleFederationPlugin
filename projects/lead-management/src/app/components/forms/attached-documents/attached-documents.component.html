@@ -1,0 +1,7 @@
+<form #uploadFilesForm>
+  <div class="form-group" *ngFor="let item of fileCategories">
+    <label for="{{item.control}}" class="w-100"><strong>{{item.name}} </strong></label>
+    <input type="file" ngModel id="report" name="{{item.control}}"/>
+  </div>
+</form>
+

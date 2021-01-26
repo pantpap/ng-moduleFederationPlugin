@@ -1,0 +1,14 @@
+@import 'vars';
+
+.border-bottom-dotted-black {
+  border-bottom: dashed 1px;
+  border-bottom-color: black;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+fieldset {
+  border: 1px solid #8e9599;
+  width: 100%;
+  padding: 1rem 0;
+}

@@ -1,0 +1,24 @@
+<ng-template #expander>
+  <div class="d-flex justify-content-between pointer" [ngClass]="classes && !withCard ? classes : ''"
+    (click)="expanded = !expanded">
+    <h5><strong>{{ title }}</strong></h5>
+
+    <i [ngClass]="expanded ? 'iconsminds-arrow-up' : 'iconsminds-arrow-down'"
+      [attr.test-button]="testTag ? testTag + 'Btn' : ''"></i>
+  </div>
+
+  <div class="mt-2 pt-4 pr-4" [ngClass]="{ 'd-none': !expanded, 'd-block': expanded }"
+    style="border-top: 1px solid #acaaaa">
+    <ng-content [attr.test-button]="testTag ? testTag + 'Container' : ''"></ng-content>
+  </div>
+</ng-template>
+
+<ng-template #expanderWithCard>
+  <div class="card" [ngClass]="classes && withCard ? classes : ''">
+    <div class="card-body">
+      <ng-container *ngTemplateOutlet="expander"></ng-container>
+    </div>
+  </div>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="withCard ? expanderWithCard : expander"></ng-container>

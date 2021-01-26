@@ -1,0 +1,15 @@
+<nav class="menu">
+  <div class="main-menu">
+    <div class="scroll">
+      <ul class="list-unstyled custom-nav-bar-list">
+        <li *ngFor="let route of routes" [class.active]="route.displayName === activeRoute"
+          (click)='setActiveRoute(route.displayName)'>
+          <a [routerLink]="route.routerLink" routerLinkActive="router-link-active">
+            <i [class]="route.icon"></i>
+            <span>{{route.displayName}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
