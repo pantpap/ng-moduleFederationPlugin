@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve shell` to start the shell for a dev server. Navigate to `http://localhost:4200/`.
 
-Run `ng serve lead-management` to start the shell for a dev server. Navigate to `http://localhost:4201/`.
+Run `ng serve lead-management` to start mfe1 for a dev server. Navigate to `http://localhost:4201/`.
 
 ## Code scaffolding
 
